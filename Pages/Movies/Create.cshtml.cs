@@ -1,20 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using RazorPagesMovies.Data;
 using RazorPagesMovies.Models;
 
 namespace RazorPagesMovies.Pages.Movies
 {
     public class CreateModel : PageModel
     {
-        private readonly RazorPagesMovies.Data.RazorPagesMoviesContext _context;
+        private readonly Data.RazorPagesMoviesContext _context;
 
-        public CreateModel(RazorPagesMovies.Data.RazorPagesMoviesContext context)
+        public CreateModel(Data.RazorPagesMoviesContext context)
         {
             _context = context;
         }
